@@ -7,7 +7,8 @@ DEVELOPER_KEY = "AIzaSyB3OjFaaHL7yjV8B_SySi9wEYjR_513icQ"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
-argparser.add_argument("--q", help="Despacito", default="ALS Ice Bucket Challenge")
+query = input("Enter the search query : ")
+argparser.add_argument("--q", help="Search here", default=query)
 # change the default to the search term you want to search
 argparser.add_argument("--max-results", help="Max results", default=25)
 # default number of results which are returned. It can vary from 0 - 100
@@ -52,7 +53,7 @@ pd.DataFrame.from_dict(res)
 
 result = str(res)
 result = result.replace("'","\"")
-print (videos_list_response)
+print (result)
 
 
 
