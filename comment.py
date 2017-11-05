@@ -29,14 +29,22 @@ def get_authenticated_service():
 
 def print_response(response):
     response = str(response)
-    response = response.replace("'", "\"");
+    response = response.replace("\"", "'");
+    response = response.replace("True", "\"True\"");
+    response = response.replace("''", "\" ");
+    response = response.replace("{'", "{\"");
+    response = response.replace(" '", " \"");
+    response = response.replace("':", "\":");
+    response = response.replace(":'", ":\"");
+    response = response.replace("',", "\",");
+    response = response.replace("'}", "\"}");
     print(response)
     try :
-        text_file = open("commentsList.txt", "w")
+        text_file = open("commentsList.json", "w")
         text_file.write(response)
         text_file.close()
-    except :
-        print("There was an error writing to the file")
+    except FileNotFoundError as error:
+        print("There was an error writing to the file" + error)
     else:
         print("The list of comments was successffully written to the file 'commentsList.txt'")
 
@@ -107,4 +115,4 @@ if __name__ == '__main__':
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
     client = get_authenticated_service()
 
-    comment_threads_list_by_video_id(client, part='snippet,replies', videoId='r9-DM9uBtVI')
+    comment_threads_list_by_video_id(client, part='snippet,replies', videoId='XS6ysDFTbLU')
