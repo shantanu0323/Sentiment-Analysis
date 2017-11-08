@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
+
+    <script>
+
+        var gaugeOptions = {
+
+            chart: {
+                type: 'solidgauge'
+            },
+
+            title: null,
+
+            pane: {
+                center: ['50%', '85%'],
+                size: '140%',
+                startAngle: -90,
+                endAngle: 90,
+                background: {
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+                    innerRadius: '60%',
+                    outerRadius: '100%',
+                    shape: 'arc'
+                }
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            // the value axis
+            yAxis: {
+                stops: [
+                    [0.1, '#DF5353'], // green
+                    [0.5, '#EEEE00'], // yellow
+                    [0.9, '#55BF3B'] // red
+                ],
+                lineWidth: 0,
+                minorTickInterval: null,
+                tickAmount: 2,
+                title: {
+                    y: -70
+                },
+                labels: {
+                    y: 16
+                }
+            },
+
+            plotOptions: {
+                solidgauge: {
+                    dataLabels: {
+                        y: 5,
+                        borderWidth: 0,
+                        useHTML: true
+                    }
+                }
+            }
+        };
+
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: helvetica;
+        }
+
+        table {
+            display: block;
+            width: 80%;
+            border: 2px solid black;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        tr {
+            border-bottom: 1px solid black;
+        }
+
+        td.text {
+            width: 90%;
+            padding: 5px;
+        }
+
+        td.graph {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="2" class="graph">
+            <div id="container-overall" style="width: 600px; height: 360px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.19;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:40px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:20px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart('container-overall', Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+    <tr>
+        <td class="text">You could challenge Tim Cook = ceo of apple</td>
+        <td class="graph">
+            <div id="container-polarity-1" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-1", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">u stupid smart kid</td>
+        <td class="graph">
+            <div id="container-polarity-2" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = -29.29;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-2", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">can I have some money</td>
+        <td class="graph">
+            <div id="container-polarity-3" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-3", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Hi everyone watch my video and share it with everyone follow me on Twitter and Instagram</td>
+        <td class="graph">
+            <div id="container-polarity-4" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-4", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Just had to put water in a bucket and pour it down yourself</td>
+        <td class="graph">
+            <div id="container-polarity-5" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = -15.56;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-5", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Not my proudest fap</td>
+        <td class="graph">
+            <div id="container-polarity-6" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-6", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">i cant even afford the ice he used</td>
+        <td class="graph">
+            <div id="container-polarity-7" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-7", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">thats a liquified diam0nd</td>
+        <td class="graph">
+            <div id="container-polarity-8" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-8", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Thank You mr.gates for doing this chalange</td>
+        <td class="graph">
+            <div id="container-polarity-9" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-9", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Great one</td>
+        <td class="graph">
+            <div id="container-polarity-10" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 80.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-10", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Who watchin this 2018</td>
+        <td class="graph">
+            <div id="container-polarity-11" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-11", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">is that really Bill Gates?</td>
+        <td class="graph">
+            <div id="container-polarity-12" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 20.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-12", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">lol</td>
+        <td class="graph">
+            <div id="container-polarity-13" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 80.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-13", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">241K views !!!!<br/>Making ðŸ’° out of everything huhhhh!!!<br/>Well that&#39;s called Midas
+            touch .
+        </td>
+        <td class="graph">
+            <div id="container-polarity-14" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-14", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text"><a href='https://www.youtube.com/watch?v=XS6ysDFTbLU&amp;t=1m18s'>1:18</a> = <b>LOOKS LIKE A
+            SICK SEAL</b> xD
+        </td>
+        <td class="graph">
+            <div id="container-polarity-15" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = -71.43;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-15", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">So who won the challange?</td>
+        <td class="graph">
+            <div id="container-polarity-16" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-16", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">is this rlly him ?</td>
+        <td class="graph">
+            <div id="container-polarity-17" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-17", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">By the time you&#39;re watching this video, he had made $26,319</td>
+        <td class="graph">
+            <div id="container-polarity-18" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-18", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">Lil chicken neck nelly</td>
+        <td class="graph">
+            <div id="container-polarity-19" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = -60.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-19", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td class="text">I&#39;d say nothing I just....</td>
+        <td class="graph">
+            <div id="container-polarity-20" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = 0.0;
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-20", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>
+
+<!--
+import json
+from textblob import TextBlob
+from pathlib import Path
+
+f = open("./commentData.json")
+s = f.read()
+
+root = json.loads(s)
+
+items = root['items']
+
+total = 0
+count = 0
+datas = []
+for item in items:
+    snippet = item['snippet']
+    topLevelComment = snippet['topLevelComment']
+    innerSnippet = topLevelComment['snippet']
+    textDisplay = innerSnippet['textDisplay']
+    data = {}
+    data['textDisplay'] = textDisplay
+    blob = TextBlob(textDisplay)
+
+    # print(textDisplay)
+    tot = 0
+    c = 0
+    for sentence in blob.sentences:
+        tot += sentence.sentiment.polarity
+        c += 1
+
+    score = tot / c * 100
+    score = float("{0:.2f}".format(score))
+    data['score'] = score
+    datas.append(data)
+    # print(score)
+    # print('**********************')
+    count += 1
+    total += score
+overallScore = total / count;
+overallScore = float("{0:.2f}".format(overallScore))
+# print(overallScore)
+
+htmlSource = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
+
+    <script>
+
+        var gaugeOptions = {
+
+            chart: {
+                type: 'solidgauge'
+            },
+
+            title: null,
+
+            pane: {
+                center: ['50%', '85%'],
+                size: '140%',
+                startAngle: -90,
+                endAngle: 90,
+                background: {
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+                    innerRadius: '60%',
+                    outerRadius: '100%',
+                    shape: 'arc'
+                }
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            // the value axis
+            yAxis: {
+                stops: [
+                    [0.1, '#DF5353'], // green
+                    [0.5, '#EEEE00'], // yellow
+                    [0.9, '#55BF3B'] // red
+                ],
+                lineWidth: 0,
+                minorTickInterval: null,
+                tickAmount: 2,
+                title: {
+                    y: -70
+                },
+                labels: {
+                    y: 16
+                }
+            },
+
+            plotOptions: {
+                solidgauge: {
+                    dataLabels: {
+                        y: 5,
+                        borderWidth: 0,
+                        useHTML: true
+                    }
+                }
+            }
+        };
+
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: helvetica;
+        }
+
+        table {
+            display: block;
+            width: 80%;
+            border: 2px solid black;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        tr {
+            border-bottom: 1px solid black;
+        }
+
+        td.text {
+            width: 90%;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        td.graph {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="2" class="graph">
+            <div id="container-overall" style="width: 600px; height: 360px"></div>
+            <script>
+                // The polarity gauge
+                var value = ''' + str(overallScore) + ''';
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:40px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:20px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart('container-overall', Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>'''
+
+i = 0
+for data in datas:
+    i += 1
+    htmlSource = htmlSource + '''
+        <tr>
+        <td class="text">''' + data['textDisplay'] + '''</td>
+        <td class="graph">
+            <div id="container-polarity-'''+ str(i) + '''" style="width: 200px; height: 120px"></div>
+            <script>
+                // The polarity gauge
+                var value = ''' + str(data['score']) + ''';
+                var result = (value == 0 ? 'Neutral' : (value > 0 ? 'Positive' : 'Negative'));
+                var formatData = '<div style="text-align:center; padding:0"><span style="font-size:14px;color:' +
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}%</span><br/>' +
+                    '<span style="font-size:12px;color:#aaa">' + result + '</span></div>';
+                var chartPolarity = Highcharts.chart("container-polarity-'''+ str(i) + '''", Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: -100,
+                        max: 100,
+                        title: {
+                            text: 'Polarity'
+                        }
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+
+                    series: [{
+                        name: 'Polarity',
+                        data: [value],
+                        dataLabels: {
+                            format: formatData
+                        },
+                        tooltip: {
+                            valueSuffix: '%pos'
+                        }
+                    }]
+
+                }));
+
+            </script>
+
+        </td>
+    </tr>
+    '''
+
+htmlSource = htmlSource + '''
+    </table>
+    </body>
+    </html>'''
+
+try:
+    f = open('./commentsAnalysis.html', 'w', encoding='utf8')
+    f.write(htmlSource)
+    f.close()
+except FileNotFoundError as error:
+    print("There was an error in creating the webpage" + error)
+else:
+    link = Path("commentsAnalysis.html").resolve()
+    print("You can now visit the link '" + str(link) + "'")
+
+-->
