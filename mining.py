@@ -19,7 +19,7 @@ youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=DEVE
 
 # Call the search.list method to retrieve results matching the specified
 # query term.
-search_response = youtube.search().list(
+search_result = youtube.search().list(
     q=options.q,
     type="video",
     part="id,snippet",
@@ -31,29 +31,64 @@ videos = {}
 # Add each result to the appropriate list, and then display the lists of
 # matching videos.
 # Filter out channels, and playlists.
-for search_result in search_response.get("items", []):
+for search_result in search_result.get("items", []):
     if search_result["id"]["kind"] == "youtube#video":
         # videos.append("%s" % (search_result["id"]["videoId"]))
         videos[search_result["id"]["videoId"]] = search_result["snippet"]["title"]
 
-print ("Videos:\n", "\n".join(videos), "\n")
+# print ("Videos:\n", "\n".join(videos), "\n")
 s = ','.join(videos.keys())
 
-videos_list_response = youtube.videos().list(
+videos_list_result = youtube.videos().list(
     id=s,
     part='id,statistics'
 ).execute()
 
 res = []
-for i in videos_list_response['items']:
+for i in videos_list_result['items']:
     temp_res = dict(v_id=i['id'], v_title=videos[i['id']])
     temp_res.update(i['statistics'])
     res.append(temp_res)
 pd.DataFrame.from_dict(res)
 
 result = str(res)
-result = result.replace("'","\"")
-print (result)
+# print (result)
+result = result.replace(":\"", ":'");
+result = result.replace(": \"", ": '");
+
+result = result.replace("\",", "',");
+result = result.replace("\" ,", "' ,");
+
+result = result.replace("\"", "*#");
+
+result = result.replace("{'", "{\"");
+result = result.replace("{ '", "{ \"");
+
+result = result.replace("' :", "\" :");
+result = result.replace("':", "\":");
+
+result = result.replace(": '", ": \"");
+result = result.replace(":'", ":\"");
+
+result = result.replace("',", "\",");
+result = result.replace("' ,", "\" ,");
+
+result = result.replace(", '", ", \"");
+result = result.replace(",'", ",\"");
+
+result = result.replace("' }", "\" }");
+result = result.replace("'}", "\"}");
+result = result.replace("*#","'");
+
+try:
+    text_file = open("videosList.json", "w", newline='', encoding='utf8')
+    text_file.write(result)
+    text_file.close()
+except FileNotFoundError as error:
+    print("There was an error writing to the file" + error)
+else:
+    print("The list of comments was successffully written to the file 'videosList.json'")
+
 
 
 

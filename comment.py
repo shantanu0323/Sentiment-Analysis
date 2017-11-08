@@ -38,15 +38,15 @@ def print_response(response):
     response = response.replace(":'", ":\"");
     response = response.replace("',", "\",");
     response = response.replace("'}", "\"}");
-    print(response)
+    # print(response)
     try :
-        text_file = open("commentsList.json", "w")
+        text_file = open("commentsList.json", "w",newline='',encoding='utf8')
         text_file.write(response)
         text_file.close()
     except FileNotFoundError as error:
         print("There was an error writing to the file" + error)
     else:
-        print("The list of comments was successffully written to the file 'commentsList.txt'")
+        print("The list of comments was successffully written to the file 'commentsList.json'")
 
 # Build a resource based on a list of properties given as key-value pairs.
 # Leave properties with empty values out of the inserted resource.
