@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="740e4145-40ac-401e-9976-69342a29ad81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commentsAnalysis.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commentsList.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/integrated.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/videosList.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/comment.py" afterPath="$PROJECT_DIR$/comment.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/finalData.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sentiment-Analysis.iml" afterPath="$PROJECT_DIR$/.idea/Sentiment-Analysis.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/comment.py" afterPath="$PROJECT_DIR$/comment.py" />
+      <change beforePath="$PROJECT_DIR$/integrated.py" afterPath="$PROJECT_DIR$/integrated.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,79 +17,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$integrated.coverage" NAME="integrated Coverage Results" MODIFIED="1522857363850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_Analysis$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1510157721454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_Analysis$commentListGenerator.coverage" NAME="commentListGenerator Coverage Results" MODIFIED="1510174864226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_Analysis$textAnalysis.coverage" NAME="textAnalysis Coverage Results" MODIFIED="1510159442903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_Analysis$videosListGenerator.coverage" NAME="videosListGenerator Coverage Results" MODIFIED="1510163109232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_Analysis$mining.coverage" NAME="mining Coverage Results" MODIFIED="1510175663650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_Analysis$sent_analysis.coverage" NAME="sent_analysis Coverage Results" MODIFIED="1510157759403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$try1.coverage" NAME="try1 Coverage Results" MODIFIED="1522860648454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$now__c.coverage" NAME="now--c Coverage Results" MODIFIED="1522858224824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$now__1_.coverage" NAME="now (1) Coverage Results" MODIFIED="1522863458835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$commentListGenerator.coverage" NAME="commentListGenerator Coverage Results" MODIFIED="1510174864226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$mining.coverage" NAME="mining Coverage Results" MODIFIED="1510175663650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_Analysis$comment.coverage" NAME="comment Coverage Results" MODIFIED="1510171372797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_Analysis$integrated.coverage" NAME="integrated Coverage Results" MODIFIED="1510177374593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_Analysis$now.coverage" NAME="now Coverage Results" MODIFIED="1522857696879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1437">
-              <caret line="115" column="45" lean-forward="false" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
-              <folding>
-                <element signature="e#25#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="integrated.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="integrated.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/integrated.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding>
+                <element signature="e#81#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="116" column="17" lean-forward="true" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sent_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sent_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-414">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finalData.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/finalData.json">
+      <file leaf-file-name="try1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/try1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="124" column="17" lean-forward="true" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentsList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commentsList.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mining.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mining.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+            <state relative-caret-position="219">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#97#112#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videosList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/videosList.json">
+      <file leaf-file-name="now.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/now.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3825">
-              <caret line="225" column="1" lean-forward="false" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="79">
+              <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#3706#6736#0" expanded="false" />
+                <element signature="e#6777#9067#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,20 +95,8 @@
       <file leaf-file-name="commentListGenerator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commentListGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="135" column="28" lean-forward="true" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentData.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commentData.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="680">
+              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -119,18 +105,92 @@
       <file leaf-file-name="commentsAnalysis.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commentsAnalysis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1240" selection-end-column="3" />
+            <state relative-caret-position="-9424">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <marker date="1520994155144" expanded="true" signature="2671:2699" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="2714:2735" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="2888:2913" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="4227:4255" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="4270:4291" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="4444:4469" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="5765:5793" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="5808:5829" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="5982:6007" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="7303:7331" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="7346:7367" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="7520:7545" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="8908:8936" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="8951:8972" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="9125:9150" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="10487:10515" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="10530:10551" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="10704:10729" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="12023:12051" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="12066:12087" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="12240:12265" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="13574:13602" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="13617:13638" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="13791:13816" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="15116:15144" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="15159:15180" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="15333:15358" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="16675:16703" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="16718:16739" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="16892:16917" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="18203:18231" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="18246:18267" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="18420:18445" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="19743:19771" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="19786:19807" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="19960:19985" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="21289:21317" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="21332:21353" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="21506:21531" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="22812:22840" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="22855:22876" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="23029:23054" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="24452:24480" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="24495:24516" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="24669:24694" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="26104:26132" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="26147:26168" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="26321:26346" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="27648:27676" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="27691:27712" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="27865:27890" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="29185:29213" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="29228:29249" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="29402:29427" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="30767:30795" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="30810:30831" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="30984:31009" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="32310:32338" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="32353:32374" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="32527:32552" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="33859:33887" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="33902:33923" ph="..." />
+                <marker date="1520994155144" expanded="true" signature="34076:34101" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyze.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analyze.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1768">
+              <caret line="127" column="12" lean-forward="false" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="textAnalysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/textAnalysis.py">
+      <file leaf-file-name="commentData.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commentData.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="255">
+              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -153,6 +213,8 @@
       <find>Is Rahul Gandhi</find>
       <find>print</find>
       <find>API</find>
+      <find>The list of videos has been retrieved ...</find>
+      <find>Invalid Arguments</find>
     </findStrings>
     <replaceStrings>
       <replace>result</replace>
@@ -176,9 +238,12 @@
         <option value="$PROJECT_DIR$/commentsAnalysis.html" />
         <option value="$PROJECT_DIR$/commentListGenerator.py" />
         <option value="$PROJECT_DIR$/videosList.json" />
-        <option value="$PROJECT_DIR$/comment.py" />
-        <option value="$PROJECT_DIR$/integrated.py" />
         <option value="$PROJECT_DIR$/finalData.json" />
+        <option value="$PROJECT_DIR$/integrated.py" />
+        <option value="$PROJECT_DIR$/comment.py" />
+        <option value="$PROJECT_DIR$/try1.py" />
+        <option value="$PROJECT_DIR$/data.txt" />
+        <option value="$PROJECT_DIR$/now.py" />
       </list>
     </option>
   </component>
@@ -215,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -228,11 +292,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SearchEverywhereHistoryKey" value="commentsAnalysis.html&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -251,43 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.integrated">
-    <configuration name="comment" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Sentiment-Analysis" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="commentListGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Sentiment-Analysis" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/commentListGenerator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.now (1)">
     <configuration name="integrated" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,8 +336,9 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mining" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="now (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -319,12 +351,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sentiment-Analysis" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mining.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/now.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="videosListGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="now--c" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -337,25 +370,64 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sentiment-Analysis" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/videosListGenerator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/now--c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="now" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Sentiment-Analysis" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\MyProjects\PythonProjects\Sentiment-Analysis\now--c.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="try1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Sentiment-Analysis" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.commentListGenerator" />
-      <item index="1" class="java.lang.String" itemvalue="Python.comment" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mining" />
-      <item index="3" class="java.lang.String" itemvalue="Python.videosListGenerator" />
-      <item index="4" class="java.lang.String" itemvalue="Python.integrated" />
+      <item index="0" class="java.lang.String" itemvalue="Python.integrated" />
+      <item index="1" class="java.lang.String" itemvalue="Python.now" />
+      <item index="2" class="java.lang.String" itemvalue="Python.now--c" />
+      <item index="3" class="java.lang.String" itemvalue="Python.now (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.try1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.integrated" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mining" />
-        <item index="2" class="java.lang.String" itemvalue="Python.commentListGenerator" />
-        <item index="3" class="java.lang.String" itemvalue="Python.comment" />
-        <item index="4" class="java.lang.String" itemvalue="Python.videosListGenerator" />
+        <item index="0" class="java.lang.String" itemvalue="Python.now (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.try1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.now--c" />
+        <item index="3" class="java.lang.String" itemvalue="Python.now" />
+        <item index="4" class="java.lang.String" itemvalue="Python.integrated" />
       </list>
     </recent_temporary>
   </component>
@@ -384,28 +456,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40444446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40527952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -446,6 +520,86 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/comment.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="45" lean-forward="false" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentsList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videosList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="225" column="1" lean-forward="false" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentListGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" column="28" lean-forward="true" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentsAnalysis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1240" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="17" lean-forward="true" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+          <folding>
+            <element signature="e#81#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="103" column="34" lean-forward="true" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
           <folding>
@@ -459,7 +613,7 @@
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -487,15 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -507,36 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analyze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="118" column="43" lean-forward="false" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sent_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/textAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commentsAnalysis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1240" selection-end-column="3" />
+        <state relative-caret-position="476">
+          <caret line="28" column="38" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -551,10 +670,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="1411">
           <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -567,7 +686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commentsList.json">
+    <entry file="file://$PROJECT_DIR$/finalData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -575,48 +694,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commentListGenerator.py">
+    <entry file="file://$PROJECT_DIR$/commentsList.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="135" column="28" lean-forward="true" selection-start-line="135" selection-start-column="28" selection-end-line="135" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commentData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finalData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="124" column="17" lean-forward="true" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+        <state relative-caret-position="816">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1437">
-          <caret line="115" column="45" lean-forward="false" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+        <state relative-caret-position="765">
+          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/integrated.py">
+    <entry file="file://$PROJECT_DIR$/now--c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4216">
+          <caret line="248" column="33" lean-forward="true" selection-start-line="248" selection-start-column="33" selection-end-line="248" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/INSTALLED_STUFFS/Python27/Lib/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6074">
+          <caret line="1409" column="0" lean-forward="false" selection-start-line="1409" selection-start-column="0" selection-end-line="1409" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client_secret.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="116" column="17" lean-forward="true" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sent_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentsAnalysis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9424">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <marker date="1520994155144" expanded="true" signature="2671:2699" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="2714:2735" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="2888:2913" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="4227:4255" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="4270:4291" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="4444:4469" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="5765:5793" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="5808:5829" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="5982:6007" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="7303:7331" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="7346:7367" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="7520:7545" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="8908:8936" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="8951:8972" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="9125:9150" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="10487:10515" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="10530:10551" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="10704:10729" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="12023:12051" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="12066:12087" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="12240:12265" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="13574:13602" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="13617:13638" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="13791:13816" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="15116:15144" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="15159:15180" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="15333:15358" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="16675:16703" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="16718:16739" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="16892:16917" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="18203:18231" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="18246:18267" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="18420:18445" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="19743:19771" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="19786:19807" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="19960:19985" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="21289:21317" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="21332:21353" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="21506:21531" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="22812:22840" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="22855:22876" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="23029:23054" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="24452:24480" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="24495:24516" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="24669:24694" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="26104:26132" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="26147:26168" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="26321:26346" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="27648:27676" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="27691:27712" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="27865:27890" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="29185:29213" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="29228:29249" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="29402:29427" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="30767:30795" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="30810:30831" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="30984:31009" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="32310:32338" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="32353:32374" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="32527:32552" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="33859:33887" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="33902:33923" ph="..." />
+            <marker date="1520994155144" expanded="true" signature="34076:34101" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="127" column="12" lean-forward="false" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentListGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/try1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#97#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/INSTALLED_STUFFS/Python27/Lib/urlparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="363" column="4" lean-forward="false" selection-start-line="363" selection-start-column="4" selection-end-line="363" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commentData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <element signature="e#81#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/now.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#3706#6736#0" expanded="false" />
+            <element signature="e#6777#9067#0" expanded="false" />
           </folding>
         </state>
       </provider>

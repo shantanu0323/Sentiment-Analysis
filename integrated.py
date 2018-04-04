@@ -1,14 +1,15 @@
-from apiclient.discovery import build
-from apiclient.errors import HttpError
+# from apiclient.discovery import build
+# from apiclient.errors import HttpError
 from oauth2client.tools import argparser
 import pandas as pd
 import json
 import os
-import google.oauth2.credentials
-import google_auth_oauthlib.flow
+# import google.oauth2.credentials
+# import google_auth_oauthlib.flow
 from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
+# from googleapiclient.errors import HttpError
 from google_auth_oauthlib.flow import InstalledAppFlow
+from pandas.compat import FileNotFoundError
 
 CLIENT_SECRETS_FILE = "client_secret.json"
 
@@ -17,7 +18,7 @@ YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 SCOPES = ['https://www.googleapis.com/auth/youtube.force-ssl']
 
-query = input("Enter the search query : ")
+query = raw_input("Enter the search query : ")
 print("Please wait while we retrieve the videos from the server ...")
 
 argparser.add_argument("--q", help="Search here", default=query)
@@ -52,12 +53,16 @@ for i in videos_list_result['items']:
     temp_res = dict(v_id=i['id'], v_title=videos[i['id']])
     temp_res.update(i['statistics'])
     res.append(temp_res)
+resultStr = str(res)
 pd.DataFrame.from_dict(res)
 
 print('The list of videos has been retrieved ...')
 print('\nGive us a momment while we validate the JSON data ...')
 # Validating the JSON data
 result = str(res)
+
+# result = result.replace("'","\"");
+
 result = result.replace(":\"", ":'");
 result = result.replace(": \"", ": '");
 
@@ -84,7 +89,9 @@ result = result.replace(",'", ",\"");
 result = result.replace("' }", "\" }");
 result = result.replace("'}", "\"}");
 result = result.replace("*#", "'");
-
+result =result.replace("\\"," ");
+result = result.replace("u'","\"");
+print(result)
 print('JSON data validated...')
 # Adding the comments to the videos
 
@@ -172,7 +179,8 @@ def comment_threads_list_by_video_id(client, **kwargs):
     return print_response(response)
 
 
-for video in root:
+for i in range(0,1):
+    video = root[0]
     outputVideo = {}
     outputVideo["videoId"] = video['v_id']
     outputVideo["videoTitle"] = video['v_title']
@@ -187,11 +195,12 @@ for video in root:
     outputVideo["comments"] = commentData
     outputRoot.append(outputVideo)
 
+print(outputRoot)
 try:
-    f = open("./finalData.json", "w", encoding='utf8')
+    f = open("./finalData.json")
     f.write(str(outputRoot))
     f.close()
 except FileNotFoundError as error:
-    print("There was an error writing to the file" + error)
+    print("There was an error writing to the file" + str(error))
 else:
     print("The list of comments was successffully written to the file 'finalData.json'")
